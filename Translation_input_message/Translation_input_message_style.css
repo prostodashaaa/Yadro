@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(image/yadro_bg4.png);
+  background-size: cover;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  margin: 0;
+}
+
+main {
+  max-width: 1520px;
+  margin: 245px auto;
+}
+
+button {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  background-color: rgba(30, 34, 170, 1);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+  padding: 12.5px 152px 13.5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(9, 12, 124, 1);
+}
+
+form {
+  position: relative;
+}
+
+form img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+textarea {
+  background-color: rgba(255, 255, 255, 1);
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 10px;
+  padding: 20px 41px 20px 20px;
+  resize: none;
+  border: none;
+  outline: none;
+  color: rgba(34, 34, 34, 1);
+  height: 100%;
+  width: 100%;
+}
+
+textarea:hover {
+  outline: none;
+}
+
+textarea::placeholder {
+  color: rgba(204, 204, 204, 1);
+}
+
+textarea::-webkit-scrollbar {
+  background-color: rgba(204, 204, 204, 1);
+  border-radius: 10px;
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(158, 155, 155);
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(130, 129, 129);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a {
+  color: rgba(0, 7, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.registration {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.registration div {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+  align-self: center;
+}
+
+.registration .img {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-height: 590px;
+}
+
+.player {
+  max-width: 1250px;
+}
+
+.player img {
+  width: 100%;
+}
+
+.container_chat {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  background-color: rgba(20, 20, 20, 1);
+  padding: 31px 30px 29px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.forum_tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.forum_tabs h1,
+.forum_tabs h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: rgba(224, 224, 224, 1);
+  margin: 0;
+  cursor: pointer;
+}
+
+.active:after {
+  content: "";
+  float: left;
+  background: rgba(30, 34, 170, 1);
+  width: 100%;
+  height: 5px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: auto;
+  padding-right: 5px;
+  max-height: 263px;
+}
+
+.message::-webkit-scrollbar {
+  background-color: rgba(25, 25, 25, 1);
+  border-radius: 10px;
+  width: 10px;
+}
+
+.message::-webkit-scrollbar-thumb {
+  background-color: rgba(47, 47, 47, 1);
+  border-radius: 10px;
+}
+
+.message::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}
+
+.name_message {
+  background-color: rgba(34, 34, 34, 1);
+  border-radius: 10px;
+  padding: 14px 10px 14px 20px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name_message > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(153, 153, 153, 1);
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(204, 204, 204, 1);
+}
+
+.align {
+  align-self: flex-end;
+}
+
+.likes {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(153, 153, 153, 1);
+  align-self: flex-end;
+  background: url("image/like.svg") no-repeat left;
+  padding-left: 26px;
+  width: 50px;
+  text-align: left;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.likes:hover {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+.likes:active {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+.input_form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.name_edit {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(153, 153, 153, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name_edit span {
+  padding-left: 10px;
+}
+
+#activate_div1 {
+  display: none;
+}
+
+#activate_div1:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+#activate_div2 {
+  display: none;
+}
+
+#activate_div2:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+#activate_div3 {
+  display: none;
+}
+
+#activate_div3:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+#activate_div4 {
+  display: none;
+}
+
+#activate_div4:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+#activate_div5 {
+  display: none;
+}
+
+#activate_div5:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+#activate_div6 {
+  display: none;
+}
+
+#activate_div6:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+#activate_div7 {
+  display: none;
+}
+
+#activate_div7:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}
+
+#activate_div8 {
+  display: none;
+}
+
+#activate_div8:checked ~ label .likes {
+  color: rgba(255, 255, 255, 1);
+  background: url("image/like_hover.svg") no-repeat left;
+}

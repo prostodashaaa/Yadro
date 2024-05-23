@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(image/yadro_bg4.png);
+  background-size: cover;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  margin: 0;
+}
+
+main {
+  max-width: 540px;
+  margin: 150px auto;
+}
+
+form {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgba(244, 246, 251, 1);
+  border: none;
+  color: rgba(34, 34, 34, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 19px 10px 20px 20px;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(211, 212, 237, 1);
+}
+
+input:hover {
+  background: rgba(231, 235, 245, 1);
+}
+
+input:focus {
+  background: rgba(231, 235, 245, 1);
+  color: rgba(34, 34, 34, 1);
+  outline: none;
+}
+
+input:user-invalid {
+  border: 1px solid rgba(233, 61, 92, 1);
+}
+
+input:user-invalid + span::after {
+  content: "Некорректный email";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: rgba(233, 61, 92, 1);
+  padding-left: 20px;
+}
+
+button {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  width: 100%;
+  background-color: rgba(30, 34, 170, 1);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+  padding: 12.5px 0 13.5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(9, 12, 124, 1);
+}
+
+span {
+  display: block;
+  position: absolute;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.forum_tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.forum_tabs h1,
+.forum_tabs h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: rgba(244, 246, 251, 1);
+  margin: 0;
+  cursor: pointer;
+}
+
+.active:after {
+  content: "";
+  float: left;
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 5px;
+  border-radius: 100px;
+  margin-top: 15px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.fields label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 10px 0;
+}

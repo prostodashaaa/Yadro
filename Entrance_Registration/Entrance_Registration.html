@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kozyreva Darya" />
+    <meta name="description" content="Форма регистрации">
+    <link rel="stylesheet" href="Entrance_Registration_style.css" />
+    <title>Форма Регистрации</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img src="image/logo.svg" alt="Логотип" class = 'logo'>
+      <div class="forum_tabs">
+        <h1 class = 'active'>Регистрация</h1>
+        <h2>Код доступа</h2>
+      </div>
+      <form action="\form" method="get">
+        <div class="fields">
+          <div class="fields_registration">
+            <h2>Данные для авторизации</h2>
+            <div class="input_field_oneLine">
+              <label for="email">Электронная почта</label>
+              <div class="icon_input">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ваша почта"
+                  required
+                  title="Введите вашу почту"
+                  pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i"
+                  class = 'email'
+                />
+                <span></span>
+                <img src="image/Icn.svg" alt="*" />
+              </div>
+            </div>
+          </div>
+          <div class="fields_other">
+            <h2>Прочие данные</h2>
+            <div class="field_title">
+              <div class="input_field_oneLine">
+                <label for="lastname">Фамилия</label>
+                <div class="icon_input">
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Ваша фамилия"
+                    required
+                    title="Введите вашу фамилию"
+                    class = 'lastname'
+                  />
+                  <span></span>
+                  <img src="image/Icn.svg" alt="*" />
+                </div>
+              </div>
+              <div class="input_field_oneLine">
+                <label for="name">Имя</label>
+                <div class="icon_input">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Ваше имя"
+                    required
+                    title="Введите ваше имя"
+                    class = 'name'
+                  />
+                  <span></span>
+                  <img src="image/Icn.svg" alt="*" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" title="Хотите отправить сообщение? Кликните на эту кнопку">Отправить</button>
+        <p>* поле, обязательное для заполнения</p>
+      </form>
+    </main>
+  </body>
+</html>

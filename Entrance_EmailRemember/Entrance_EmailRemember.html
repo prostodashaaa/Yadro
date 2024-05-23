@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kozyreva Darya" />
+    <meta name="description" content="Код доступа" />
+    <link rel="stylesheet" href="Entrance_EmailRemember_style.css" />
+    <title>Код доступа</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img src="image/logo.svg" alt="Логотип" class="logo" />
+      <div class="forum_tabs">
+        <h1>Регистрация</h1>
+        <h2 class="active">Код доступа</h2>
+      </div>
+      <form action="\form" method="get">
+        <div class="fields">
+          <label for="email">Укажите электронную почту для восстановления кода</label>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="mail@mail.com"
+              required
+              title="Введите почту"
+              pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i"
+            />
+            <span></span>
+          </div>
+        </div>
+        <button
+          type="submit"
+          title="Хотите отправить сообщение? Кликните на эту кнопку"
+        >
+          Отправить код
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
